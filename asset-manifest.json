@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/modtestf4/static/css/main.9556c510.css",
+    "main.js": "/modtestf4/static/js/main.bfd4af28.js",
+    "index.html": "/modtestf4/index.html",
+    "main.9556c510.css.map": "/modtestf4/static/css/main.9556c510.css.map",
+    "main.bfd4af28.js.map": "/modtestf4/static/js/main.bfd4af28.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9556c510.css",
+    "static/js/main.bfd4af28.js"
+  ]
+}
