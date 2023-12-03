@@ -1,30 +1,32 @@
+// App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Updated import statements
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import { Provider } from 'react-redux';
+
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import History from './pages/History';
 import WordDetailsPage from './pages/WordDetailsPage';
 
-
 function App() {
   return (
-    
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navbar />
-        <Routes> {/* Use Routes instead of Switch */}
-          <Route path="/" element={<Home />} /> {/* Use element property */}
-          <Route path="/history" element={<History />} /> {/* Use element property */}
-          <Route path="/word/:word" element={<WordDetailsPage />} /> {/* Use element property */}
+        <Routes>
+          {/* Display Home component by default */}
+          <Route index element={<Home />} />
+
+          {/* Additional routes */}
+          <Route path="/history" element={<History />} />
+          <Route path="/word/:word" element={<WordDetailsPage />} />
         </Routes>
       </div>
     </Router>
-   
   );
 }
 
 export default App;
+
 
 
