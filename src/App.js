@@ -1,13 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Updated import statements
 import './App.css';
+import { Provider } from 'react-redux';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import History from './pages/History';
 import WordDetailsPage from './pages/WordDetailsPage';
 
+
 function App() {
   return (
+    
     <Router>
       <div className="App">
         <Navbar />
@@ -18,6 +21,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+   
   );
 }
 
